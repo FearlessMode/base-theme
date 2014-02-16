@@ -1,0 +1,59 @@
+@import "mixins";
+
+// Typography
+// --------------------
+
+body{
+  color: #222;
+  color: rgba(0, 0, 0, .8);
+  font-family: $body-font-family;
+//  @include debug-vertical-alignment();
+}
+
+// Headings
+// --------------------
+
+h1, h2, h3, h4, h5, h6{
+  @include heading;
+}
+
+h1{
+  @include adjust-font-size-to($base-font-size * 4.236, 5);
+}
+
+h2{
+  @include adjust-font-size-to($base-font-size * 3.236, 4);
+}
+
+// Liks
+// --------------------
+
+a{
+  color: $link-color;
+  &:hover, &:active, &:focus{
+    color: darken($link-color, 20%);
+  }
+  &:visited{
+    color: adjust-hue($link-color, 45%);
+  }
+}
+
+// Text
+// --------------------
+
+p{
+  @include margin-leader(1);
+  @include margin-trailer(1);
+}
+
+strong, dfn{
+  font-weight: bold;
+}
+
+em, dfn{
+  font-style: italic;
+}
+
+small{
+  font-size: 85%;
+}

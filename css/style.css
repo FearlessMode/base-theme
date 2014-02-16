@@ -1,0 +1,645 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+ * v2.0 | 20110126
+ * License: none (public domain)
+*/
+/* line 18, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 28, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 41, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 45, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 49, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_reset.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 61, /var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+* html {
+  font-size: 100%;
+}
+
+/* line 64, /var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+/* line 1, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_base.scss */
+.assistive-text {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 4, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_base.scss */
+main {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+
+/* line 1, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_banner.scss */
+.site-title {
+  display: block;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  color: #111111;
+  text-rendering: optimizelegibility;
+  font-size: 4.236em;
+  line-height: 1.06232em;
+  color: #1e5799;
+  text-decoration: none;
+  padding-top: 0.375em;
+  padding-bottom: 0.375em;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+/* line 173, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_mixins.scss */
+.site-title a {
+  text-decoration: none;
+}
+/* line 175, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_mixins.scss */
+.site-title a:visited {
+  color: blue;
+}
+/* line 7, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_banner.scss */
+.site-title:visited {
+  color: #1e5799;
+  text-decoration: none;
+}
+
+/* line 16, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_banner.scss */
+.page-title {
+  padding-left: 24px;
+}
+
+/* line 20, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_banner.scss */
+header[role=banner] nav {
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  *zoom: 1;
+  border-top: 1px solid #99601e;
+  border-bottom: 1px solid #99601e;
+}
+/* line 35, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_mixins.scss */
+header[role=banner] nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+/* line 41, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_mixins.scss */
+header[role=banner] nav a {
+  display: block;
+  width: 8em;
+}
+/* line 45, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_mixins.scss */
+header[role=banner] nav li {
+  float: left;
+  width: 8em;
+}
+/* line 49, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_mixins.scss */
+header[role=banner] nav li:hover ul {
+  left: auto;
+}
+/* line 51, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_mixins.scss */
+header[role=banner] nav li:hover ul li {
+  float: none;
+  display: block;
+}
+/* line 55, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_mixins.scss */
+header[role=banner] nav li:hover ul ul {
+  left: -999em;
+}
+/* line 61, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_mixins.scss */
+header[role=banner] nav li li:hover ul {
+  left: auto;
+}
+/* line 65, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_mixins.scss */
+header[role=banner] nav li ul {
+  position: absolute;
+  width: 8em;
+  left: -999em;
+}
+/* line 69, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_mixins.scss */
+header[role=banner] nav li ul ul {
+  margin: -1em 0 0 8em;
+}
+/* line 32, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_h5b-mixins.scss */
+header[role=banner] nav:before {
+  content: "";
+  display: table;
+}
+/* line 36, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_h5b-mixins.scss */
+header[role=banner] nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 27, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_banner.scss */
+header[role=banner] nav a {
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  color: #1e5799;
+  text-decoration: none;
+}
+/* line 32, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_banner.scss */
+header[role=banner] nav a:visited {
+  color: #1e5799;
+  text-decoration: none;
+}
+
+/* line 40, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_banner.scss */
+article {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  padding: 1.5em;
+}
+
+/* line 6, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_priority-typography.scss */
+body {
+  color: #222;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+/* line 16, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_priority-typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  color: #111111;
+  text-rendering: optimizelegibility;
+}
+/* line 173, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_mixins.scss */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  text-decoration: none;
+}
+/* line 175, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_mixins.scss */
+h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited {
+  color: blue;
+}
+
+/* line 20, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_priority-typography.scss */
+h1 {
+  font-size: 4.236em;
+  line-height: 1.77054em;
+}
+
+/* line 24, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_priority-typography.scss */
+h2 {
+  font-size: 3.236em;
+  line-height: 1.85414em;
+}
+
+/* line 31, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_priority-typography.scss */
+a {
+  color: blue;
+}
+/* line 33, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_priority-typography.scss */
+a:hover, a:active, a:focus {
+  color: #000099;
+}
+/* line 36, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_priority-typography.scss */
+a:visited {
+  color: #bf00ff;
+}
+
+/* line 44, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_priority-typography.scss */
+p {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+/* line 49, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_priority-typography.scss */
+strong, dfn {
+  font-weight: bold;
+}
+
+/* line 53, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_priority-typography.scss */
+em, dfn {
+  font-style: italic;
+}
+
+/* line 57, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_priority-typography.scss */
+small {
+  font-size: 85%;
+}
+
+/* line 9, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+h3 {
+  font-size: 2.618em;
+  line-height: 1.14591em;
+}
+
+/* line 13, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+h4 {
+  font-size: 2em;
+  line-height: 1.5em;
+}
+
+/* line 17, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+h5 {
+  font-size: 1.618em;
+  line-height: 1.85414em;
+}
+
+/* line 21, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+h6 {
+  font-size: 1.236em;
+  line-height: 1.21359em;
+}
+
+/* line 26, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+blockquote {
+  border-style: solid;
+  border-width: 0.0625em;
+  padding: 1.4375em;
+  border-color: #ccc;
+  background-color: #eee;
+  margin: auto 1.5em;
+  -webkit-box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.1);
+}
+/* line 33, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+blockquote p:first-child {
+  margin-top: 0em;
+}
+/* line 36, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+blockquote p:last-child {
+  margin-bottom: 0em;
+}
+
+/* line 42, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+cite:before {
+  content: "\2014";
+}
+
+/* line 47, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+address {
+  display: block;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  font-style: normal;
+}
+
+/* line 54, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 58, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 63, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+q:before {
+  content: "\201C";
+}
+/* line 66, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+q:after {
+  content: "\201D";
+}
+
+/* line 71, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+img {
+  max-width: 100%;
+  height: auto !important;
+}
+
+/* line 81, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+ul, ol {
+  padding: 0;
+  margin-left: 2em;
+}
+
+/* line 89, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0;
+}
+
+/* line 93, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+ul {
+  list-style: disc;
+}
+/* line 95, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+ul ul {
+  list-style: square;
+}
+/* line 97, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+ul ul ul {
+  list-style: circle;
+}
+/* line 99, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+ul ul ul ul {
+  list-style: disc;
+}
+
+/* line 106, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+ol {
+  list-style: decimal;
+}
+/* line 108, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+ol ol {
+  list-style: lower-latin;
+}
+/* line 110, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+ol ol ol {
+  list-style: lower-roman;
+}
+
+/* line 116, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+ol.outline {
+  list-style: upper-roman;
+}
+/* line 118, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+ol.outline ol {
+  list-style: upper-latin;
+}
+/* line 120, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+ol.outline ol ol {
+  list-style: decimal;
+}
+/* line 122, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+ol.outline ol ol ol {
+  list-style: lower-roman;
+}
+/* line 124, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+ol.outline ol ol ol ol {
+  list-style: lower-latin;
+}
+
+/* line 133, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+ul.unstyled,
+ol.unstyled {
+  margin-left: 0;
+  list-style: none;
+}
+
+/* line 140, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+dl {
+  margin-bottom: 1.5em;
+}
+
+/* line 144, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+dt {
+  font-weight: bold;
+}
+
+/* line 148, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+dd {
+  margin-left: .8em;
+}
+
+/* line 152, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+sup, sub {
+  line-height: 0;
+  font-size: 75%;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 162, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+table {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  width: 100%;
+}
+
+/* line 168, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+th {
+  font-weight: bold;
+}
+
+/* line 172, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+thead th {
+  background: #c3d9ff;
+}
+
+/* line 176, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+th, td, caption {
+  padding: 4px 10px 4px 5px;
+}
+
+/* line 180, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+tbody tr:nth-child(even) td, tbody tr.even td {
+  background: #e5ecf9;
+}
+
+/* line 184, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+tfoot {
+  font-style: italic;
+}
+
+/* line 191, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+pre {
+  border-style: solid;
+  border-width: 0.0625em;
+  padding: 1.4375em;
+  border-color: #ccc;
+  background-color: #333333;
+  font-weight: bold;
+  color: white;
+  margin: auto 1.5em;
+  white-space: pre;
+}
+
+/* line 201, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+pre, code, tt, var {
+  font-family: "andale mono", "lucida console", monospace;
+}
+
+/* line 208, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+input, label {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  line-height: 24px;
+}
+
+/* line 216, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+form {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+/* line 221, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+label {
+  font-weight: bold;
+}
+
+/* line 225, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+input[type=submit] {
+  display: block;
+  width: auto;
+  font-size: 16px;
+  padding: 0.375em;
+  margin: 0.375em;
+  background: #1e5799;
+  text-decoration: none;
+  color: white;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+  border-radius: 0.5em;
+}
+/* line 119, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_mixins.scss */
+input[type=submit]:hover {
+  background-image: none;
+  background: #18467a;
+}
+/* line 123, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_mixins.scss */
+input[type=submit]:active {
+  border-color: transparent;
+  background-image: none;
+  background: #153d6b;
+}
+
+/* line 229, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+input[type=text], input[type=password], input[type=url], input[type=email], input[type=search], input.text, input.title, textarea {
+  background-color: #fff;
+  line-height: 24px;
+  border: 1px solid #bbb;
+  color: #000;
+  font-size: 16px;
+  padding: 0.15em;
+  margin: 0.5375em;
+  padding-left: .25em;
+  padding-right: .25em;
+}
+
+/* line 239, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_typography.scss */
+input[type=text]:focus, input[type=password]:focus, input[type=url]:focus, input[type=email]:focus, input.text:focus, input.title:focus, textarea:focus {
+  border-color: #666;
+}
+
+/* line 6, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_wordpress.scss */
+.alignnone, a img.alignnone, .wp-caption.alignnone {
+  margin-right: 1em;
+}
+
+/* line 10, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_wordpress.scss */
+.aligncenter, div.aligncenter, a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 14, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_wordpress.scss */
+.alignright, a img.alignright {
+  float: right;
+  margin-left: 1em;
+}
+
+/* line 18, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_wordpress.scss */
+.alignleft, a img.alignleft {
+  float: left;
+  margin-right: 1em;
+}
+
+/* line 22, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_wordpress.scss */
+.wp-caption {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  max-width: 96%;
+  /* Image does not overflow the content area */
+  padding: 5px 3px 10px;
+  text-align: center;
+}
+
+/* line 30, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_wordpress.scss */
+.wp-caption.alignleft {
+  float: left;
+  margin-right: 1em;
+  float: none;
+}
+
+/* line 35, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_wordpress.scss */
+.wp-caption.alignright {
+  float: left;
+  margin-right: 1em;
+  float: none;
+}
+
+/* line 40, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_wordpress.scss */
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto;
+}
+
+/* line 49, /var/www/Wordpress-Development/wp-content/themes/base-theme/_dev/css/sass/_wordpress.scss */
+.wp-caption p.wp-caption-text {
+  margin-top: 0em;
+  margin-bottom: 0em;
+  font-size: 0.7em;
+  line-height: 2.14286em;
+}

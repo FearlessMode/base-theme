@@ -1,0 +1,44 @@
+.site-title{
+  display: block;
+  @include heading;
+  @include adjust-font-size-to($base-font-size * 4.236);
+  color: $color-primary;
+  text-decoration: none;
+  &:visited{
+    color: $color-primary;
+    text-decoration: none;
+  }
+  @include padding-leader(.25);
+  @include padding-trailer(.25);
+  padding-right: $base-line-height;
+  padding-left: $base-line-height;
+}
+.page-title{
+  padding-left: $base-line-height;
+}
+header[role=banner]{
+  nav{
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+    @include menu-horizontal-dropdown(8em, 8em);
+    @include h5b-clearfix;
+    border-top: 1px solid $color-complement;
+    border-bottom: 1px solid $color-complement;
+    a{
+      @include padding-leader(.5);
+      @include padding-trailer(.5);
+      color: $color-primary;
+      text-decoration: none;
+      &:visited{
+        color: $color-primary;
+        text-decoration: none;
+      }
+
+    }
+  }
+}
+article{
+  @include margin-leader;
+  @include margin-trailer;
+  padding: 1.5em;
+}

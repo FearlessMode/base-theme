@@ -1,0 +1,55 @@
+// Vertical Rhythm
+// --------------------
+
+$base-font-size: 16px;
+$base-line-height: 24px; //19.6 18.2
+
+// Responsive Breakpoints
+// --------------------
+
+$breakpoint-base-mobile: 480px;
+$breakpoint-small: 768px;
+$breakpoint-medium: 1025px;
+$breakpoint-large: 1224px;
+$breakpoint-very-large: 1824px;
+
+// Grid
+// --------------------
+
+$total-columns : 12;
+$column-width : 6em;
+$gutter-width : 1em;
+$grid-padding : 1em;
+
+// Colors
+// --------------------
+
+$color-primary: #1e5799;
+$color-primary-light: lighten($color-primary, (100 - lightness($color-primary)) * 0.1);
+$color-primary-very-light: lighten($color-primary, (100 - lightness($color-primary)) * 0.4);
+$color-primary-ultra-light: lighten($color-primary, (100 - lightness($color-primary)) * 0.8);
+$color-primary-dark: darken($color-primary, lightness($color-primary) * 0.1);
+$color-primary-very-dark: darken($color-primary, lightness($color-primary) * 0.4);
+$color-primary-ultra-dark: darken($color-primary, lightness($color-primary) * 0.8);
+$color-complement: complement($color-primary);
+
+// Headings
+// --------------------
+
+$heading-font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+$heading-font-weight: normal;
+$heading-color: #111;
+
+// Text
+// --------------------
+
+$body-font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+$accent-font-family: serif;
+$link-color: blue;
+
+// Code
+// --------------------
+
+$code-font-family: "andale mono", "lucida console", monospace;
+$code-background-color: #333;
+$code-text-color: #fff;

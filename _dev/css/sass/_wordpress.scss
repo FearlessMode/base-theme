@@ -1,0 +1,53 @@
+@import "mixins";
+
+// Wordpress generated classes
+// --------------------
+
+.alignnone, a img.alignnone, .wp-caption.alignnone{
+  @include align-none;
+}
+
+.aligncenter, div.aligncenter, a img.aligncenter{
+  @include align-center;
+}
+
+.alignright, a img.alignright{
+  @include align-right;
+}
+
+.alignleft, a img.alignleft{
+  @include align-left;
+}
+
+.wp-caption {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  max-width: 96%; /* Image does not overflow the content area */
+  padding: 5px 3px 10px;
+  text-align: center;
+}
+
+.wp-caption.alignleft{
+  @include align-left;
+  float: none;
+}
+
+.wp-caption.alignright{
+  @include align-left;
+  float: none;
+}
+
+.wp-caption img{
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto;
+}
+
+.wp-caption p.wp-caption-text{
+  @include margin-leader(0);
+  @include margin-trailer(0);
+  @include adjust-font-size-to($base-font-size * .7);
+}

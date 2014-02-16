@@ -1,0 +1,29 @@
+@media print {
+  /* line 4, ../_dev/css/sass/print.scss */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 10, ../_dev/css/sass/print.scss */
+  a, a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 13, ../_dev/css/sass/print.scss */
+  a[href]:after {
+    content: "(" attr(href) ")";
+  }
+
+  /* line 16, ../_dev/css/sass/print.scss */
+  abbr[title]:after {
+    content: "(" attr(title) ")";
+  }
+
+  /* line 19, ../_dev/css/sass/print.scss */
+  #site-header, aside {
+    display: none;
+  }
+}
