@@ -18,22 +18,65 @@
 }
 header[role=banner]{
   nav{
-    padding-right: 1.5em;
-    padding-left: 1.5em;
-    @include menu-horizontal-dropdown(8em, 8em);
     @include h5b-clearfix;
+    padding-right: 1.5em;
+    padding-left: 1em;
     border-top: 1px solid $color-complement;
     border-bottom: 1px solid $color-complement;
+    ul{ 
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      line-height: 1;
+    }
     a{
+      display: block;
+      width: 9em;
       @include padding-leader(.5);
       @include padding-trailer(.5);
+      padding-left: .75em;
+      padding-right: .75em;
       color: $color-primary;
       text-decoration: none;
       &:visited{
         color: $color-primary;
         text-decoration: none;
       }
-
+    }
+    li{
+      float: left;
+      width: 9em;
+      &:hover{
+        ul{
+          left: auto;
+          li{
+            border-bottom: 1px solid $color-complement;
+            border-left: 1px solid $color-complement;
+            border-right: 1px solid $color-complement;
+            float: none;
+            display: block;
+            background: #fff;
+          }
+          ul{
+            left: -999em;
+          }
+        }
+      }
+      li:hover{
+        ul{
+          left: auto;
+        }
+      }
+      ul{
+        position: absolute;
+        width: 9em;
+        left: -999em;
+        border-top: 1px solid $color-complement;
+        ul{
+          border-top: none;
+          margin: -2.5em 0 0 9em;
+        }
+      }
     }
   }
 }
