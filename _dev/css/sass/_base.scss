@@ -1,9 +1,19 @@
 .assistive-text{
   @include h5b-visually-hidden;
 }
+
 main{
   @include padding-leader;
   @include padding-trailer;
-  margin-left: 1.5em;
-  margin-right: 1.5em;
+}
+
+article{
+  @include margin-leader;
+  @include margin-trailer;
+  header{
+    padding: 1.5em;
+  }
+}
+.entry-summary{
+  padding: 0 1.5em;
 }

@@ -80,8 +80,3 @@ header[role=banner]{
     }
   }
 }
-article{
-  @include margin-leader;
-  @include margin-trailer;
-  padding: 1.5em;
-}
