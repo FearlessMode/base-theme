@@ -3,6 +3,7 @@ if(!class_exists('Theme_Setup')){
   class Theme_Setup{
 
     public static function init(){
+      add_action('after_setup_theme', array('Theme_Featured_Image', 'add_image_sizes'));
       add_action('after_setup_theme', array('Theme_Setup', 'load_theme_textdomain'));
       add_action('after_setup_theme', array('Theme_Setup', 'add_theme_support'));
       add_action('after_setup_theme', array('Theme_Setup', 'register_navigation'));
@@ -28,7 +29,7 @@ if(!class_exists('Theme_Setup')){
     }
 
     public static function add_theme_support(){
-//      add_theme_support('post-thumbnails');
+      add_theme_support('post-thumbnails');
 //      add_theme_support('post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat'));
       add_editor_style('/css/editor-style.min.css');
     }
